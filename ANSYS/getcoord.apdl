@@ -1,0 +1,13 @@
+/prep7
+allsel, all
+*get, MAX_NODID, node, 0, num, max
+*get, MIN_NODID, node, 0, num, min
+csys, 0
+*cfopen, node_coord, dat
+CUR_NOD_ID = MIN_NODID
+*dowhile, CUR_NOD_ID
+*vwrite, CUR_NOD_ID, nx(CUR_NOD_ID), ny(CUR_NOD_ID), nz(CUR_NOD_ID)
+(F10.0, F24.8, F24.8, F24.8)
+CUR_NOD_ID = NDNEXT(CUR_NOD_ID)
+*enddo
+*cfclos

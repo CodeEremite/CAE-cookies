@@ -1,0 +1,9 @@
+/SOLU
+ANTYPE, MODAL
+MODOPT, LANB, 10, 0, 0, , OFF
+SOLVE
+
+/AUX2
+FILE,模型名,full
+HBMAT, kkk, dat, , [ASCII/BIN], stiff, no, yes
+HBMAT, mmm, dat, , [ASCII/BIN], mass, no, no
