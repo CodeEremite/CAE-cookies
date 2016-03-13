@@ -1,0 +1,3 @@
+! 获取所用时间
+*GET, ETIM, ACTIVE, 0, TIME, CPU
+CPUTIME = ETIM-BTIM
